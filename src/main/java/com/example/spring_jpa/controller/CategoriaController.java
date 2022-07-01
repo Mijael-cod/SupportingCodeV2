@@ -36,6 +36,7 @@ public class CategoriaController {
         model.addAttribute("categorias", categoriaService.readAll());
         return "cate/listarCat";
     }
+    
     @GetMapping("/form")
     public String createCate(Model model){
         model.addAttribute("titulo", "Registrar Categoría");
