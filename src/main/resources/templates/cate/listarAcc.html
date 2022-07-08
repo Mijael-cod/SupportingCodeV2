@@ -26,7 +26,8 @@
                         <th scope="col" colspan="2">ACCION</th>
                     </tr>
                 </thead>
-                <tbody>
+                
+                <tbody> 
                     <tr th:each="acc :${accesorios}">
                         <th scope="row">1</th>
                         <td th:text="${acc.id}"></td>
@@ -41,6 +42,7 @@
                         </td>
                     </tr>                    
                 </tbody>
+                
             </table>
         </div>
 

@@ -40,6 +40,13 @@ public class ProductoService implements Operaciones<Producto>{
         return productoRepository.findAll();
     }
     
+    //Ejemplo buscar
+    
+    public List<Producto> buscarporNombre(String nombre){
+        return productoRepository.findByNombre(nombre);
+    }
+    
+    
     
     //public List<Producto> readAll(String keyword) {
        // if (keyword != null) {
@@ -47,5 +54,5 @@ public class ProductoService implements Operaciones<Producto>{
       //  }
         //return productoRepository.findAll();
     //}
-    
+ 
 }

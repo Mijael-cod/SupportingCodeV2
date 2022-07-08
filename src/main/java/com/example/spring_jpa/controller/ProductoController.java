@@ -62,4 +62,23 @@ public class ProductoController {
         model.addAttribute("prod", productoService.read(idprod));
         return "redirect:/prod";
     }
+    
+    //Buscar por nombre
+    
+    @GetMapping("/productoform")
+    public String productoform(Model model){
+        model.addAttribute("producto", new Producto());
+        return "productoform";
+    }
+    
+    //@GetMapping("/producto")
+    //public buscarporNombre(@RequestParam String nombre, Model model, @ModelAttribute("producto") Producto  producto){
+      //  model.addAttribute("productoPorNombre", productoService.buscarporNombre(nombre));
+      //  return "productoform";
+        
+        
+        
+        
+    //}
+    
 }
